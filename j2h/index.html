@@ -1,0 +1,283 @@
+<!-- <!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <title>title</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+ </head>
+ <body>
+
+    <div id="content"></div>
+   <script
+   			  src="./workshopnamecopy.json"
+   			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   			  crossorigin="anonymous"></script>
+ <script type="text/javascript">
+var jsonRequestUrl = 'https://www.reddit.com/r/legaladvice/comments/9skxh8/i_was_arrested_kept_in_jail_for_62_days_and_then.json';
+var decoder = $('<div />');
+var decodedText = '';
+
+$.getJSON(jsonRequestUrl, function foo(result) {
+    var elements = result[1].data.children.slice(0, 10);
+
+    $.each(elements, function (index, value) {
+        decoder.html(value.data.body_html);
+        decodedText += decoder.text();
+    });
+
+    $('#content').append(decodedText);
+});</script>
+ </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Oracle Workshops</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css'>
+  <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism.min.css'>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-12">
+          <div class="container content">
+
+            <h1 class="title">Container Native Development Workshop</h1>
+            <h3 class="subtitle"><i class="is-large fa fa-cloud"> </i>
+              Oracle Workshops
+              </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <aside class="is-medium menu">
+            <p class="menu-label">
+              categories
+            </p>
+            <ul class="menu-list">
+              <li class="is-right"><a href="#const" class="is-active"> Read Me First</a></li>
+              <li><a href="#let" class="is-active"> Lab 100</a></li>
+              <li><a href="#let" class="is-active"> Lab 200</a></li>
+              <li><a href="#let" class="is-active"> Lab 300</a></li>
+              <li><a href="#let" class="is-active"> Lab 400</a></li>
+            </ul>
+            <p class="menu-label">
+              More to read...
+            </p>
+            <ul class="menu-list">
+              <li><span class="tag is-white is-medium">Lorem</span></li>
+              <li><span class="tag is-white is-medium">Ipsum</span></li>
+              <li><span class="tag is-white is-medium">Dolor</span></li>
+              <li><span class="tag is-white is-medium">Animi</span></li>
+              <li><span class="tag is-white is-medium">Eximi</span></li>
+              <li><span class="tag is-white is-medium">Nullius</span></li>
+              <li><span class="tag is-white is-medium">Oxipi</span></li>
+              <li><span class="tag is-white is-medium">Vultus</span></li>
+              <li><span class="tag is-white is-medium">Voluptatis</span></li>
+              <li><span class="tag is-white is-medium">Exomarphis</span></li>
+              <li><span class="tag is-white is-medium">Finimi</span></li>
+              <li><span class="tag is-white is-medium">Aenigma</span></li>
+              <li><span class="tag is-white is-medium">Arkham</span></li>
+              <li><span class="tag is-white is-medium">Blue</span></li>
+              <li><span class="tag is-white is-medium">Medium</span></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="column is-9">
+          <div class="content is-medium">
+            <h3 class="title is-2">Containerize Your Java Microservice:</h3>
+            <div class="box">
+              <h4 id="const" class="title is-3">Introduction</h4>
+
+                <span class="icon has-text-primary">
+                  </span>
+                  <div class="content"><p>This is the first of several labs that are part of the Oracle Public Cloud Container Native Development workshop. This workshop will walk you through the process of moving an existing application into a containerized CI/CD pipeline
+                  and deploying it to a Kubernetes cluster in the Oracle Public Cloud.
+                  <br><br>
+                  You will take on 2 personas during the workshop. The Lead Developer Persona will be responsible for configuring the parts of the automated build and deploy process that involve details about the application itself. The DevOps
+                  Engineer Persona will configure the parts of the automation involving the Kubernetes infrastructure. To containerize and automate the building and deploying of this application you will make use of Wercker Pipelines for CI/CD,
+                  Docker Hub for a container registry, and Terraform for provisioning a Kubernetes cluster on Oracle Cloud Infrastructure.
+                  <br><br>
+                  During this lab, you will take on the Lead Developer Persona and work on containerizing your existing Java application. You will set up Wercker to monitor your application's source code repository for commits and automatically
+                  trigger a build, test, and package pipeline, which will result in a Docker image of your application that is ready to be deployed.<p></div>
+                    <article class="message is-warning">
+                <div class="message-body">
+                  To log issues, click <a href="https://github.com/oracle/learning-library/issues/new">here</a> to go to the GitHub oracle account to go to the GitHub oracle repository issue submission form.
+                </div>
+              </article>
+            </div>
+            <div class="box">
+              <h4 id="let" class="title is-3">let</h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  Block-scoped. Can be re-assigned.
+                </div>
+              </article>
+              <pre><code class="language-javascript">let i = 0;</code></pre>
+            </div>
+            <h3 class="title is-3">More to Come...</h3>
+            <div class="box">
+              <h4 id="lorem" class="title is-4">More to come...</h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                <i class="fas fa-info-circle"></i>
+              </span>
+                <div class="message-body">
+                  Lorem ipsum dolor sit amet, mea ne viderer veritus menandri, id scaevola gloriatur instructior sit.
+                </div>
+              </article>
+              <pre><code class="language-javascript">let i = 0;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <article class="notification media has-background-white">
+              <figure class="media-left">
+                <span class="icon">
+              <i class="has-text-warning fas fa-columns fa-lg"></i>
+            </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Columns</h1>
+                  <p class="is-size-5 subtitle">
+                    The power of <strong>Flexbox</strong> in a simple interface
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="notification has-background-white media">
+              <figure class="media-left">
+                <span class="icon has-text-info">
+              <i class="fab fa-lg fa-wpforms"></i>
+            </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Form</h1>
+                  <p class="is-size-5 subtitle">
+                    The indispensable <strong>form controls</strong>, designed for maximum clarity
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="notification has-background-white media">
+              <figure class="media-left">
+                <span class="icon has-text-danger">
+              <i class="fas fa-lg fa-cubes"></i>
+            </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Components</h1>
+                  <p class="is-size-5 subtitle">
+                    Advanced multi-part components with lots of possibilities
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="notification has-background-white media">
+              <figure class="media-left">
+                <span class="icon has-text-grey">
+              <i class="fas fa-lg fa-cogs"></i>
+            </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Modifiers</h1>
+                  <p class="is-size-5 subtitle">
+                    An <strong>easy-to-read</strong> naming system designed for humans
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="notification has-background-white media">
+              <figure class="media-left">
+                <span class="icon has-text-primary">
+              <i class="fas fa-lg fa-warehouse"></i>
+            </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Layout</h1>
+                  <p class="is-size-5 subtitle">
+                    Design the <strong>structure</strong> of your webpage with these CSS classes
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="notification has-background-white media">
+              <figure class="media-left">
+                <span class="icon has-text-danger">
+              <i class="fas fa-lg fa-cube"></i>
+            </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4">Elements</h1>
+                  <p class="is-size-5 subtitle">
+                    Essential interface elements that only require a <strong>single CSS class</strong>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div class="columns is-mobile is-centered">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons"><a class="tag is-link" href="https://github.com/dansup/bulma-templates">Bulma Templates</a>
+            <span class="tag is-info">MIT license</span>
+          </div>
+        </div>
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag is-dark">based on a pen</span>
+            <span class="tag has-addons is-warning"><a href="https://codepen.io/melanieseltzer/pen/odOXWM"><i class="fab fa-lg fa-codepen"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+</body>
+
+</html>
