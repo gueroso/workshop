@@ -14,6 +14,19 @@ li {margin: 10px}
 background: linear-gradient(to top right, #003b4d 10%, #00758f);
 }
 
+
+.message.is-warning .message-body {
+  border-color: #f29111;
+}
+
+.message.is-primary .message-body {
+  border-color: #3a913f;
+}
+
+.has-text-primary {
+  color: #3a913f !important;
+}
+
 .box {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
